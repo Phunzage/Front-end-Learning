@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登记表</title>
+    <link rel="stylesheet" href="stylecn.css" />
+</head>
+
+<body>
+    <h1>登记表</h1>
+    <p>请在本表中填写所需信息</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+        <fieldset>
+            <label for="first-name">请输入您的名字: <input id="first-name" name="first-name" type="text" required /></label>
+            <label for="last-name">请输入您的姓氏: <input id="last-name" name="last-name" type="text" required /></label>
+            <label for="email">请输入您的电子邮箱: <input id="email" name="email" type="email" required /></label>
+            <label for="new-password">创建一个新密码: <input id="new-password" name="new-password" type="password"
+                    pattern="[a-z0-5]{8,}" required /></label>
+        </fieldset>
+        <fieldset>
+            <legend>账户类型（必填）</legend>
+            <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline"
+                    checked /> 个人用户</label>
+            <label for="business-account"><input id="business-account" type="radio" name="account-type"
+                    class="inline" /> 企业用户</label>
+        </fieldset>
+        <fieldset>
+            <label for="profile-picture">上传个人照片: <input id="profile-picture" type="file" name="file" /></label>
+            <label for="age">请输入您的年龄（岁）: <input id="age" type="number" name="age" min="13" max="120" /></label>
+            <label for="referrer">您是如何知道我们的？
+                <select id="referrer" name="referrer">
+                    <option value="">(请选择一项)</option>
+                    <option value="1">FreeCodeCamp 新闻</option>
+                    <option value="2">FreeCodeCamp YouTube 频道</option>
+                    <option value="3">FreeCodeCamp 论坛</option>
+                    <option value="4">其他</option>
+                </select>
+            </label>
+            <label for="bio">提供个人简历:
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="我喜欢在海边写代码..."></textarea>
+            </label>
+        </fieldset>
+        <label for="terms-and-conditions">
+            <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" />
+            我接受<a href="https://www.freecodecamp.org/news/terms-of-service/">条款与细则</a>
+        </label>
+        <input type="submit" value="提交" />
+    </form>
+</body>
+
+</html>

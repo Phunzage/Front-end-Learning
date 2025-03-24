@@ -1,0 +1,20 @@
+* {
+    color: white;
+    font-size: 14px;
+}
+
+a {
+    display: block;
+    width: 230px;
+    height: 40px;
+    /* tip: 让文字的高度（行高line-height） == 框的高度即可让文字居中 */
+    line-height: 40px;
+    padding: 5px 10px 5px 2px;
+    margin: 0;
+    background-color: #55585a;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: red;
+}

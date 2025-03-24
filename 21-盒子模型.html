@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+    <style>
+        * {
+            /* 清除内外边距 */
+            margin: 0;
+            padding: 0;
+        }
+
+        .father {
+            width: 400px;
+            height: 400px;
+            margin: 20px auto;
+            background-color: #cfcfcf;
+            border-radius: 10px;
+            border-top: 1px solid transparent;
+        }
+        .son {
+            width: 200px;
+            height: 200px;
+            margin: 70px auto;
+            background-color: red;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>让padding不超过盒子：不设置盒子宽度</p>
+    </div>
+
+    <div class="father">
+        <div class="son">
+            <p>外边距合并（塌陷）问题：</p>
+            <ol>
+                <li>为父元素定义上边框</li>
+                <li>为父元素定义上内边距</li>
+                <li>为父元素添加overflow: hidden</li>
+                <li>固定、浮动、绝对定位不会有塌陷问题</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

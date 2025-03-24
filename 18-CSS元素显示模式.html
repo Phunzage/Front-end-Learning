@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素显示模式</title>
+    <link rel="stylesheet" href="18-style.css">
+</head>
+
+<body>
+    <!-- HTML中元素分为三大类：块元素，行内元素，行内块元素 -->
+    <table border="1" cellspacing="0" width="80%">
+        <tr style="font-weight: bold">
+            <td>元素模式</td>
+            <td>元素列表</td>
+            <td>设置样式</td>
+            <td>默认宽度</td>
+            <td>包含</td>
+        </tr>
+        <tr>
+            <td>块级元素</td>
+            <td>一行只能放一个块级元素</td>
+            <td>可以设置宽度高度</td>
+            <td>容器的100%</td>
+            <td>容器级可以包含任何标签</td>
+        </tr>
+        <tr>
+            <td>行内元素</td>
+            <td>一行可以放多个行内元素</td>
+            <td>不可以直接设置宽度高度</td>
+            <td>它本身内容的宽度</td>
+            <td>容纳文本或者其他行内元素</td>
+        </tr>
+        <tr>
+            <td>行内块元素</td>
+            <td>一行放多个行内块元素</td>
+            <td>可以设置宽度和高度</td>
+            <td>它本身内容的宽度</td>
+            <td></td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- 显示模式转换 -->
+
+    <!-- 转换为块元素：display: block -->
+    <!-- 转换为行内元素：display: inline -->
+    <!-- 转换为行内块元素：display: inline-block -->
+
+    <!-- 行内元素转块元素 -->
+    <a href="https://baidu.com">百度</a>
+
+    <!-- 块元素转行内元素 -->
+    <div>
+        我本应独占一行
+    </div>
+    <div>
+        我也是
+    </div>
+
+    <!-- 行内元素转行内块元素 -->
+    <span>
+        我本是行内元素，没有高度宽度
+    </span>
+    <span>
+        我也是
+    </span>
+
+</body>
+
+</html>

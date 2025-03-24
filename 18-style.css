@@ -1,0 +1,20 @@
+a {
+    background-color: red;
+    width: 500px;
+    height: 500px;
+    display: block;
+}
+
+div {
+    background-color: rgb(188, 240, 32);
+    width: 500px;
+    height: 300px;
+    display: inline;
+}
+
+span {
+    background-color: rgb(12, 184, 61);
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+}

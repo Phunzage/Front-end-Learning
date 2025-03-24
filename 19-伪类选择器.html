@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            background-color: black;
+            width: 100px;
+            height: 200px;
+        }
+
+        input:focus {
+            border: 2px solid red;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <fieldset>
+          <label for="first-name">用户名: <input id="first-name" name="first-name" type="text" required /></label>
+    
+          <label for="email">电子邮箱: <input id="email" name="email" type="email" required /></label>
+        </fieldset>
+    </div>
+</body>
+</html>

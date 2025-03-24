@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动</title>
+
+    <style>
+        /* 第一种 */
+        .box {
+            width: 420px;
+            background-color: pink;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        /* 第三种 */
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        /* 第二种 */
+        .box_overflow {
+            width: 420px;
+            background-color: pink;
+            overflow: hidden;
+        }
+
+        /* 第四种 */
+        .clearfix_d:before,
+        .clearfix_d:after {
+            content: "";
+            display: table;
+        }
+        .clearfix_d:after {
+            clear: both;
+        }
+
+        /* 内部盒子 */
+        .box01 {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-left: 10px;
+        }
+
+        /* 测试元素 */
+        .black {
+            width: 500px;
+            height: 20px;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <p>父元素没有高度而子元素浮动时，会对后面的元素造成影响</p>
+    <p>此时需要清除浮动</p>
+    <p>清除浮动的四种方法：</p>
+
+    <div class="box">
+        <h2>第一种额外标签法</h2>
+
+        <div class="box01"></div>
+        <div class="box01"></div>
+        <div class="clear"></div>
+    </div>
+        <div class="black"></div>
+
+        <br>
+
+    <div class="box_overflow">
+        <h2>第二种父元素添加overflow</h2>
+
+        <div class="box01"></div>
+        <div class="box01"></div>
+    </div>
+        <div class="black"></div>
+
+        <br>
+
+    <div class="box clearfix">
+        <h2>第三种父元素添加clearfix(推荐)</h2>
+
+        <div class="box01"></div>
+        <div class="box01"></div>
+    </div>
+        <div class="black"></div>
+
+        <br>
+
+    <div class="box clearfix_d">
+        <h2>第四种父元素添加双伪元素(推荐)</h2>
+
+        <div class="box01"></div>
+        <div class="box01"></div>
+    </div>
+        <div class="black"></div> 
+</body>
+</html>

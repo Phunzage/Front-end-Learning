@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>填表帮你找对象</title>
+    <style>
+        #cen {
+            width: 80%;
+            background-color: burlywood;
+            /* 将整个容器的宽度设置为页面的80%，然后用下面的语句实现自动调整两边宽度。 */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h4 {
+            text-shadow: 2px 2px red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cen">
+        <table border="0" cellspacing="0">
+            <h4>青春不常在，抓紧谈恋爱</h4>
+            <!-- 第一行 -->
+            <tr>
+                <td>性别</td>
+                <td><label for="man">男</label> <input checked type="radio" name="sex" value="男" id="man">
+                    <label for="woman">女</label> <input type="radio" name="sex" value="女" id="woman">
+                </td>
+            </tr>
+            <!-- 第二行 -->
+            <tr>
+                <td>生日</td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <!-- 第三行 -->
+            <tr>
+                <td>所在地区</td>
+                <td><input type="text" name="address"></td>
+            </tr>
+            <!-- 第四行 -->
+            <tr>
+                <td>婚姻状况</td>
+                <td>
+                    <input type="radio" id="yihun" name="merry"> <label for="yihun">已婚</label>
+                    <input type="radio" id="weihun" name="merry"> <label for="weihun">未婚</label>
+                    <input type="radio" id="lihun" name="merry"> <label for="lihun">离婚</label>
+                </td>
+            </tr>
+            <!-- 第五行 -->
+            <tr>
+                <td>学历</td>
+                <td>
+                    <select>
+                        <option>幼儿园</option>
+                        <option>小学</option>
+                        <option>初中</option>
+                        <option>高中</option>
+                        <option selected="selected">大学</option>
+                        <option>研究生</option>
+                    </select>
+                </td>
+            </tr>
+            <!-- 第六行 -->
+            <tr>
+                <td>喜欢的类型&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <input type="checkbox" id="wumz"> <label for="wumz">妩媚的</label>
+                    <input type="checkbox" id="keai"> <label for="keai">可爱的</label>
+                    <input type="checkbox" id="xc"> <label for="xc">小鲜肉</label>
+                    <input type="checkbox" id="lk"> <label for="lk">老腊肉</label>
+                    <input type="checkbox" id="all"> <label for="all">都喜欢</label>
+                </td>
+            </tr>
+            <!-- 第七行 -->
+            <tr>
+                <td>自我介绍</td>
+                <td>
+                    <textarea>自我介绍</textarea>
+                </td>
+            </tr>
+            <!-- 第八行 -->
+            <tr>
+                <td></td>
+                <td><a href="https://img.keaitupian.cn/newupload/05/1685429270108887.jpg"><input type="submit"
+                            value="免费注册"></a></td>
+            </tr>
+            <!-- 第九行 -->
+            <tr>
+                <td></td>
+                <td><input type="checkbox">我同意注册条款和会员加入标准</td>
+            </tr>
+            <!-- 第十行 -->
+            <tr>
+                <td></td>
+                <td><a href="https://chishenme.xyz/">我是会员，立即登录</a></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <h3>我承诺</h3>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>年满十八岁，单身</li>
+                        <li>抱着严肃的态度</li>
+                        <li>真诚寻找另一半</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

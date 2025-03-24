@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器</title>
+    <style>
+        /* 后代选择器 后代选择器用于选取某元素的后代元素。*/
+        ul li {
+            color: brown;
+        }
+
+        /* 子元素选择器 选取直接后代，嵌套的子元素不可以*/
+        div>p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 后代选择器 选择ul下的li -->
+    <ul>
+        <li>hello</li>
+        <li>world</li>
+    </ul>
+
+    <!-- 子元素选择器 -->
+    <div>
+        <h2>My name is Donald</h2>
+        <p>I live in Duckburg.</p> <!--这条变红色-->
+    </div>
+
+    <div>
+        <span>
+            <p>I will not be styled.</p> <!--这是嵌套的，无事发生-->
+        </span>
+    </div>
+
+    <!-- 相邻兄弟选择器 -->
+    <!-- 格式： 
+     div+p {
+        color: bule
+     }
+    -->
+
+    <div>
+        <h2>DIV 内部标题</h2>
+        <!-- <p>DIV 内部段落。</p> 这个标签不变色-->
+    </div>
+
+    <p>DIV 之后的第一个 P 元素。</p> <!-- 这是div后紧跟的第一个p，这个标签变色 -->
+
+    <p>DIV 之后的第二个 P 元素。</p>
+
+    <!-- 后续兄弟选择器 -->
+    <!-- 格式：
+    div~p {
+        color: pink
+    }
+    -->
+    <p>之前段落，不会添加背景颜色。</p>
+    <div>
+        <!-- <p>段落 1。 在 div 中。</p>
+        <p>段落 2。 在 div 中。</p> 在后续兄弟选择器中不变色-->
+    </div>
+
+    <!-- <p>段落 3。不在 div 中。</p>
+    <p>段落 4。不在 div 中。</p> 属于div后面的标签，变色-->
+
+    <!-- 并集选择器 -->
+
+    .p, .div {
+        style……
+    }
+
+    <!-- 伪类选择器 -->
+    a:hover {
+        style………
+        <!-- 常用写法： -->
+        a {
+            style……
+        }
+
+        a:hover {
+            style……
+        }
+    }
+</body>
+
+</html>
