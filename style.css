@@ -45,6 +45,7 @@ h2 {
 
 .box {
     width: 1000px;
+    min-width: 320px;
     max-width: 1000px;
     margin: 40px auto;
     margin-top: 70px;
@@ -155,7 +156,7 @@ h2 {
 }
 
 
-@media (max-width: 760px) {
+@media (min-width: 375px) and (max-width: 767px) {
     .box {
         width: 400px;
     }
@@ -163,6 +164,6 @@ h2 {
         width: 320px;
     }
     .retop {
-        margin-left: 210px;
+        margin-left: 170px;
     }
 }
