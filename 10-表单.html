@@ -18,23 +18,32 @@
     <form>
         <!-- type是属性值，text是允许用户输入文本；name是后端标识，告诉后台服务器的；
          maxlength是允许输入的最大文本长度 -->
-        用户名：<input type="text" name="username" maxlength="6" required><br>
+        用户名：
+        <input type="text" name="username" maxlength="6" required><br>
 
         <!-- type是属性值，password是允许用户输入密码信息 -->
-        密码：<input type="password" name="pwd" required><br>
+        密码：
+        <input type="password" name="pwd" required><br>
 
         <!-- type是属性值，radio是单选框；value值是告诉后台服务器用户选择了哪个选项，checked是默认勾选;label标签是当用户点击按钮前的文字时也可以达到选择的效果，for和id对应即可 -->
-        性别：<label for="man">男</label> <input type="radio" name="sex" value="男" checked="checked" id="man"> <label
-            for="woman">女</label> <input type="radio" name="sex" value="女" id="woman"><br>
+        性别：
+        <label for="man">男</label> 
+        <input type="radio" name="sex" value="男" checked="checked" id="man"> 
+        <label for="woman">女</label> 
+        <input type="radio" name="sex" value="女" id="woman"><br>
 
         <!-- type是属性值，checkbox是多选框 -->
-        爱好：<label for="eat">吃饭</label> <input type="checkbox" name="hoppy" value="吃饭" id="eat"> <label
-            for="sleep">睡觉</label> <input type="checkbox" name="hoppy" value="睡觉" id="sleep"> <label
-            for="muamuamua">嘬猪猪包</label> <input type="checkbox" name="hoppy" value="嘬猪猪包" checked="checked"
-            id="muamuamua"><br>
+        爱好：
+        <label for="eat">吃饭</label> 
+        <input type="checkbox" name="hoppy" value="吃饭" id="eat"> 
+        <label for="sleep">睡觉</label> 
+        <input type="checkbox" name="hoppy" value="睡觉" id="sleep"> 
+        <label for="muamuamua">嘬猪猪包</label> 
+        <input type="checkbox" name="hoppy" value="嘬猪猪包" checked="checked" id="muamuamua"><br>
 
         <!-- file:上传文件；button:生成普通按钮 -->
-        上传结婚证证件照 <input type="file" required><br>
+        上传结婚证证件照： 
+        <input type="file" required><br>
         <input type="button" value="点击自动领取结婚证" required><br>
 
         <!--submit:提交；reset:重置-->
