@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li>
+                <header>Python Doc</header>
+            </li>
+            <li><a class="nav-link" href="#基础语法">基础语法</a></li>
+            <li><a class="nav-link" href="#基本数据类型">基本数据类型</a></li>
+            <li><a class="nav-link" href="#注释">注释</a></li>
+            <li><a class="nav-link" href="#运算符">运算符</a></li>
+            <li><a class="nav-link" href="#条件控制">条件控制</a></li>
+            <li><a class="nav-link" href="#循环语句">循环语句</a></li>
+            <li><a class="nav-link" href="#函数">函数</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="基础语法">
+            <header id="base">基础语法</header>
+            <p>基础语法：Python 的设计哲学</p>
+            <p>的核心特点是简洁性和可读性。</p>
+            <p>缩进规则：Python 用缩进（4个空格或Tab）划分代码块，而非大括号 {}。这种设计强制代码结构清晰，但需注意缩进一致性。动态类型：变量无需声明类型，赋值时自动识别（例如 x = 10 是整数，x =
+                "Hello" 变为字符串）。交互式执行：可逐行运行代码，适合调试和快速验证逻辑。</p>
+        </section>
+
+        <section class="main-section" id="基本数据类型">
+            <header id="var">基本数据类型</header>
+            <p>基本数据类型：数据的基石</p>
+            <p>Python 的数据类型是程序运行的基础单元，常见类型包括：</p>
+            <p>整数（int）：表示无小数部分的数值（如年龄、计数）。</p>
+            <p>浮点数（float）：带小数点的数值（如价格、温度），精度有限需注意计算误差。字符串（str）：文本信息，支持多语言字符，可用单引号或双引号包裹。布尔值（bool）：仅包含 True 和
+                False，用于条件判断。</p>
+            <code>
+                # 示例 <br>
+                a = 10       # 整数 <br>
+                b = 3.14     # 浮点数 <br>
+                c = "Python" # 字符串 <br>
+                d = True     # 布尔值 <br>
+            </code>
+            <p>这些类型决定了数据如何存储、运算和传递，是构建复杂结构（如列表、字典）的基石。</p>
+        </section>
+
+        <section class="main-section" id="注释">
+            <header id="annotation">注释</header>
+            <p>注释：代码的说明书</p>
+            <p>注释是代码中不可执行的说明文字，作用包括：</p>
+            <ul>
+                <li>解释逻辑：帮助他人（或未来的你）理解代码意图。</li>
+                <li>临时禁用代码：调试时可通过注释快速排除某段代码。</li>
+                <li>团队协作：统一注释规范可提升项目可维护性。</li>
+            </ul>
+            <code>
+                # 这是单行注释 <br>
+                """ <br>
+                这是多行注释 <br>
+                可以写多行内容 <br>
+                """
+            </code>
+            <p>单行注释适合简短说明，多行注释（三引号）适合详细文档或代码块说明。</p>
+        </section>
+
+
+        <section class="main-section" id="运算符">
+            <header id="operator">运算符</header>
+            <p>运算符：数据操作的工具箱</p>
+            <p>运算符是连接数据的桥梁，分为几类：</p>
+            <ul>
+                <li>算术运算符：加减乘除、幂运算（）和取余（%），用于数学计算。
+                <li>比较运算符：判断两个值的关系（如 == 是否相等，> 是否更大），结果为布尔值。
+                <li>逻辑运算符：组合多个条件（and 同时成立，or 任一成立，not 取反）。
+            </ui>
+            <code>
+                # 示例 <br>
+                x = 5 + 3    # 8 <br>
+                y = (2 > 1) and (3 != 4)  # True
+            </code>
+            <p>运算符优先级遵循数学常规（如先乘除后加减），复杂表达式建议用括号明确顺序。</p>
+        </section>
+
+        <section class="main-section" id="条件控制">
+            <header id="if">条件控制</header>
+            <p>条件控制：程序的决策系统</p>
+            <p>程序通过条件判断选择执行路径：</p>
+            <ul>
+                <li>if 语句：基础条件判断，若成立则执行对应代码块。</li>
+                <li>（else if）：链式判断，满足多个条件之一时执行。</li>
+                <li>else：兜底逻辑，当所有条件不满足时执行。</li>
+            </ul>
+            <code>
+                age = 18 <br>
+                if age < 18: <br>
+                    print("未成年") <br>
+                elif age == 18: <br>
+                    print("刚成年") <br>
+                else: <br>
+                    print("成年人")
+            </code>
+            <p>条件控制的核心是布尔表达式，其结果决定程序流向。例如，用户登录时根据输入密码是否正确跳转到不同界面。</p>
+        </section>
+
+
+        <section class="main-section" id="循环语句">
+            <header id="for">循环语句</header>
+            <p>循环语句：重复任务的自动化</p>
+            <p>循环是处理重复操作的关键，Python 提供两种主要方式：</p>
+            <ul>
+                <li>for 循环：适用于已知次数的迭代（如遍历列表、字符串字符）。</li>
+                <li>while 循环：适用于未知次数但依赖条件的循环（如持续监听用户输入）。</li>
+            </ul>
+            <code>
+                # 打印水果列表 <br>
+                fruits = ["苹果", "香蕉", "橘子"] <br> 
+                for fruit in fruits: <br>
+                print(fruit)
+            </code>
+            <p>无限循环（如 while True）需谨慎使用，通常配合 break 语句退出。循环中可嵌套条件判断，实现复杂逻辑。</p>
+        </section>
+
+
+        <section class="main-section" id="函数">
+            <header if="fonc">函数</header>
+            <p>函数：代码的封装与复用</p>
+            <p>函数是组织代码的核心单元，具有以下优势：</p>
+            <ul>
+
+
+                <li>模块化：将功能拆分为独立块，降低代码复杂度。</li>
+                <li>复用性：同一函数可在多处调用，避免重复编写代码。</li>
+                <li>参数化：通过参数传递不同值，提升灵活性。</li>
+            </ul>
+            <code>
+                # 定义一个求和函数 <br>
+                def add(a, b): <br>
+                return a + b <br>
+                # 调用函数 <br>
+                result = add(2, 3) <br>
+                print(result)  # 输出 5 
+            </code>
+            <p>定义函数时需明确：</p>
+            <ul>输入（参数）：函数依赖的外部数据。
+                <li>处理逻辑：函数内部的操作步骤。</li>
+                <li>输出（返回值）：用 return 返回结果，无返回值则默认 None。</li>
+            </ul>
+            函数命名应清晰表达功能（如 calculate_area()），便于理解和维护。
+        </section>
+    </main>
+</body>
+
+</html>
