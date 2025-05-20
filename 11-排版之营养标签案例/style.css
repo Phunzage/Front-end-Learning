@@ -20,6 +20,7 @@
   header h1 {
     text-align: center;
     margin: -4px 0;
+    /* 字体间距 */
     letter-spacing: 0.15px
   }
   
@@ -98,5 +99,6 @@
     font-size: 0.6rem;
     margin: 5px 0;
     padding: 0 8px;
+    /* 文本缩进 */
     text-indent: -8px;
   }
