@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素的显示与隐藏</title>
+    <style>
+        .pop {
+            width: 100px;
+            height: 100px;
+            display: none;
+            background-color: aqua;
+        }
+
+        .arch {
+            width: 100px;
+            height: 100px;
+            background-color: dodgerblue;
+        }
+
+        .ubuntu {
+            visibility: hidden;
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="pop">pop</div>
+    <div class="arch">arch</div>
+    <div class="ubuntu">ubuntu</div>
+    <p>
+    display: none的元素会被隐藏，并且不占有原来的位置，
+    要显示元素，使用display: block（转换为块级元素）显示元素
+    </p>
+    <b>display: none应用十分广泛，后面会与JavaScript一起使用制作网页特效</b>
+    <p>
+        visibility: hidden是将元素隐藏，但是保留位置，
+        要显示元素使用visibility: visible
+    </p>
+</body>
+</html>
