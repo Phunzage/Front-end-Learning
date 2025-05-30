@@ -24,6 +24,14 @@
             height: 100px;
             background-color: brown;
         }
+
+        .mint {
+            overflow: auto;
+            width: 270px;
+            height: 200px;
+            background-color: green;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -38,6 +46,24 @@
     <p>
         visibility: hidden是将元素隐藏，但是保留位置，
         要显示元素使用visibility: visible
+    </p>
+
+    <div class="mint">
+        Linux Mint 是一个基于 Ubuntu 和 Debian 的 Linux 发行版，
+        由 Linux Mint Team 团队于2006年开始发行。其目标是提供一种更完整的即刻可用体验，包括浏览器插件、多媒体编解码器、对 DVD 播放的支持、Java 和其他组件。
+        Linux Mint 增加了一套定制桌面及各种菜单，一些独特的配置工具，以及一份基于 web 的软件包安装界面。
+        它是一个对用户友好而功能强大的操作系统，适用于家庭用户和企业。
+    </div>
+    <p>
+        overflow的几个属性：
+        <ul>
+            <li>visible: 内容不能被裁减并且可能渲染到边距盒（padding）的外部。</li>
+            <li>hidden: 不显示超出对象尺寸的内容，超出的部分被隐藏，无滚动条</li>
+            <li>scroll: 不管超出与否，都显示滚动条</li>
+            <li>auto: 超出自动显示滚动条，不超出不显示滚动条</li>
+        </ul>
+        一般情况下，我们都不想让溢出的内容显示出来，因为溢出的部分会影响布局。
+        但是如果有定位的盒子，慎用overflow: hidden 因为它会隐藏多余的部分。
     </p>
 </body>
 </html>
