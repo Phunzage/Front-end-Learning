@@ -20,6 +20,20 @@ li {
     height: 280px;
 }
 
+.tb-promo .mb {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 520px;
+    height: 280px;
+    background: rgba(0, 0, 0, .4);
+}
+
+.tb-promo:hover .mb {
+    display: block;
+}
+
 .prev,
 .next {
     position: absolute;
