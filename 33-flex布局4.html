@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-content: 设置侧轴上子元素排列方向（多行）</title>
+<style>
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            width: 50vw;
+            height: 80vh;
+            margin: auto;
+            margin-top: 10px;
+            background-color: aquamarine;
+        }
+
+        .box .demo {
+            width: 200px;
+            height: 150px;
+            margin: 2px;
+            background-color: bisque;
+        }
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>控制子元素在侧轴上的排列方式，在子元素为多项时使用</h3>
+    <div class="box">
+        <div class="demo">
+            align-content: flex-start;
+            默认值在侧轴的头部开始排列
+        </div>
+        <div class="demo">
+            align-content: flex-end;
+            在侧轴的尾部开始排列
+        </div>
+        <div class="demo">
+            align-content: center;
+            在侧轴中间显示
+        </div>
+        <div class="demo">
+            align-content: space-around;
+            子轴在侧轴平分剩余空间
+        </div>
+        <div class="demo">
+            align-content: space-between;
+            子轴在侧轴先平分在两头，再平分剩余空间
+        </div>
+        <div class="demo">
+            align-content: stretch;
+            设置子项元素高度平分父元素高度
+        </div>
+    </div>
+</body>
+</html>
