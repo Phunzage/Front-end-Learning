@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex布局: display</title>
+    <style>
+        .box {
+            /* 给父元素添加flex属性 */
+            display: flex;
+            /* 默认是从左向右，x轴 row */
+            /* 即此处省略：flex-direction: row; */
+            width: 50vw;
+            height: 50vh;
+            margin: auto;
+            margin-top: 100px;
+            background-color: black;
+        }
+        .box-col {
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+            height: 50vh;
+            background-color: blueviolet;
+        }
+        span {
+            width: 30vw;
+            height: 30vh;
+            margin: 3vh 3vw;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>横向排列</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+    <div class="box-col">
+        <span>纵向排列</span>
+        <span>y</span>
+        <span>z</span>
+    </div>
+</body>
+</html>

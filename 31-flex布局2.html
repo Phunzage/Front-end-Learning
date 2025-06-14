@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content: 设置主轴上子元素的排列方式</title>
+    <style>
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 50vw;
+            height: 50vh;
+            margin: 5vh auto;
+            background-color: antiquewhite;
+        }
+        .demo1 {
+            width: 20vw;
+            height: 8vh;
+            background-color:darkseagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="demo1">
+            justify-content: flex-start;
+            是指从主轴起始处为起点
+        </div>
+        <div class="demo1">
+            justify-content: flex-end;
+            是指从主轴终止处为起点
+        </div>
+        <div class="demo1">
+            justify-content: center;
+            让子元素居中对齐
+        </div>
+        <div class="demo1">
+            justify-content: space-around;
+            平分剩余空间
+        </div>
+        <div class="demo1">
+            justify-content: space-between;
+            先两边贴边，再平分剩余空间
+        </div>
+    </div>
+</body>
+</html>
